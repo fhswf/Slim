@@ -1,0 +1,147 @@
+
+2024-06-25:15:36:44,440 INFO     [__main__.py:254] Verbosity set to INFO
+2024-06-25:15:36:57,429 INFO     [__main__.py:341] Selected Tasks: ['arc_challenge', 'gsm8k', 'hellaswag', 'truthfulqa_mc2', 'winogrande']
+2024-06-25:15:36:57,450 INFO     [evaluator.py:141] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+2024-06-25:15:36:57,450 INFO     [evaluator.py:187] Initializing hf model, with arguments: {'pretrained': '/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428', 'tokenizer': '/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428', 'dtype': 'float16'}
+2024-06-25:15:36:57,510 WARNING  [logging.py:61] Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2024-06-25:15:36:57,510 INFO     [huggingface.py:173] Device not specified
+2024-06-25:15:36:57,511 INFO     [huggingface.py:174] Cuda Available? True
+Some weights of LlamaForCausalLM were not initialized from the model checkpoint at /home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428 and are newly initialized: ['lm_head.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for winogrande contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/winogrande
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+2024-06-25:15:38:27,695 INFO     [task.py:398] Building contexts for winogrande on rank 0...
+100%|████████████████████████████████████| 1267/1267 [00:00<00:00, 92723.74it/s]
+2024-06-25:15:38:27,781 INFO     [task.py:398] Building contexts for truthfulqa_mc2 on rank 0...
+100%|████████████████████████████████████████| 817/817 [00:00<00:00, 969.37it/s]
+2024-06-25:15:38:28,679 INFO     [task.py:398] Building contexts for hellaswag on rank 0...
+
+100%|███████████████████████████████████| 10042/10042 [00:03<00:00, 3313.90it/s]
+2024-06-25:15:38:34,370 INFO     [task.py:398] Building contexts for gsm8k on rank 0...
+
+100%|██████████████████████████████████████| 1319/1319 [00:05<00:00, 231.34it/s]
+2024-06-25:15:38:40,143 INFO     [task.py:398] Building contexts for arc_challenge on rank 0...
+100%|█████████████████████████████████████| 1172/1172 [00:00<00:00, 1562.67it/s]
+2024-06-25:15:38:41,014 INFO     [evaluator.py:404] Running loglikelihood requests
+Running loglikelihood requests:   0%|                 | 0/53271 [00:00<?, ?it/s]
+
+Running loglikelihood requests:   0%|       | 257/53271 [00:11<18:01, 49.01it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running loglikelihood requests:  97%|██▉| 51613/53271 [01:48<00:00, 1720.98it/s]
+Running loglikelihood requests: 100%|████| 53271/53271 [01:49<00:00, 487.86it/s]
+2024-06-25:15:40:47,816 INFO     [evaluator.py:404] Running generate_until requests
+Running generate_until requests:   0%|                 | 0/1319 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running generate_until requests: 100%|██████| 1319/1319 [07:08<00:00,  3.08it/s]
+2024-06-25:15:48:37,417 WARNING  [huggingface.py:1304] Failed to get model SHA for /home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428 at revision main. Error: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428'. Use `repo_type` argument if needed.
+hf (pretrained=/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428,tokenizer=/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428,dtype=float16), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: auto (64)
+|    Tasks     |Version|     Filter     |n-shot|  Metric   |Value |   |Stderr|
+|--------------|------:|----------------|-----:|-----------|-----:|---|-----:|
+|winogrande    |      1|none            |     0|acc        |0.4854|±  |0.0140|
+|truthfulqa_mc2|      2|none            |     0|acc        |0.4839|±  |0.0163|
+|hellaswag     |      1|none            |     0|acc        |0.2561|±  |0.0044|
+|              |       |none            |     0|acc_norm   |0.2633|±  |0.0044|
+|gsm8k         |      3|strict-match    |     5|exact_match|0.0000|±  |0.0000|
+|              |       |flexible-extract|     5|exact_match|0.0000|±  |0.0000|
+|arc_challenge |      1|none            |     0|acc        |0.2116|±  |0.0119|
+|              |       |none            |     0|acc_norm   |0.2875|±  |0.0132|
+2024-06-25:15:48:55,290 INFO     [evaluation_tracker.py:132] Saving results aggregated
+2024-06-25:15:48:55,315 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-06-25:15:48:55,420 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-06-25:15:48:55,663 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-06-25:15:48:56,842 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-06-25:15:48:56,985 INFO     [evaluation_tracker.py:203] Saving samples results

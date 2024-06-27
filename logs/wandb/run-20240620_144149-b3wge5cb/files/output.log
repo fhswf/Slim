@@ -1,0 +1,28 @@
+Beispiel Train Dataset:
+{'question': 'do good samaritan laws protect those who help at an accident', 'answer': True, 'passage': "Good Samaritan laws offer legal protection to people who give reasonable assistance to those who are, or who they believe to be, injured, ill, in peril, or otherwise incapacitated. The protection is intended to reduce bystanders' hesitation to assist, for fear of being sued or prosecuted for unintentional injury or wrongful death. An example of such a law in common-law areas of Canada: a good Samaritan doctrine is a legal principle that prevents a rescuer who has voluntarily helped a victim in distress from being successfully sued for wrongdoing. Its purpose is to keep people from being reluctant to help a stranger in need for fear of legal repercussions should they make some mistake in treatment. By contrast, a duty to rescue law requires people to offer assistance and holds those who fail to do so liable.", 'input_ids': [128000, 3055, 1695, 10167, 277, 13145, 7016, 6144, 1884, 889, 1520, 520, 459, 11677, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+DatasetDict({
+    train: Dataset({
+        features: ['question', 'answer', 'passage'],
+        num_rows: 9427
+    })
+    validation: Dataset({
+        features: ['question', 'answer', 'passage'],
+        num_rows: 3270
+    })
+})
+DatasetDict({
+    train: Dataset({
+        features: ['question', 'label', 'passage'],
+        num_rows: 9427
+    })
+    validation: Dataset({
+        features: ['question', 'label', 'passage'],
+        num_rows: 3270
+    })
+})
+Beispiel Train Dataset:
+{'question': 'do good samaritan laws protect those who help at an accident', 'label': True, 'passage': "Good Samaritan laws offer legal protection to people who give reasonable assistance to those who are, or who they believe to be, injured, ill, in peril, or otherwise incapacitated. The protection is intended to reduce bystanders' hesitation to assist, for fear of being sued or prosecuted for unintentional injury or wrongful death. An example of such a law in common-law areas of Canada: a good Samaritan doctrine is a legal principle that prevents a rescuer who has voluntarily helped a victim in distress from being successfully sued for wrongdoing. Its purpose is to keep people from being reluctant to help a stranger in need for fear of legal repercussions should they make some mistake in treatment. By contrast, a duty to rescue law requires people to offer assistance and holds those who fail to do so liable.", 'input_ids': [128000, 3055, 1695, 10167, 277, 13145, 7016, 6144, 1884, 889, 1520, 520, 459, 11677, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+['question', 'label', 'passage', 'input_ids', 'attention_mask']
+{'question': 'do iran and afghanistan speak the same language', 'label': True, 'passage': 'Persian (/ˈpɜːrʒən, -ʃən/), also known by its endonym Farsi (فارسی fārsi (fɒːɾˈsiː) ( listen)), is one of the Western Iranian languages within the Indo-Iranian branch of the Indo-European language family. It is primarily spoken in Iran, Afghanistan (officially known as Dari since 1958), and Tajikistan (officially known as Tajiki since the Soviet era), and some other regions which historically were Persianate societies and considered part of Greater Iran. It is written in the Persian alphabet, a modified variant of the Arabic script, which itself evolved from the Aramaic alphabet.', 'input_ids': [128000, 3055, 6348, 276, 323, 8136, 16083, 9121, 6604, 279, 1890, 4221, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001, 128001], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}

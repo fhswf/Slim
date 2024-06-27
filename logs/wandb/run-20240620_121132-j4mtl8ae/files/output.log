@@ -1,0 +1,13 @@
+
+3
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/thsch026/masterarbeit/models/generated/prune/pruneme/merged-llama3 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/thsch026/masterarbeit/models/generated/prune/pruneme/merged-llama3-small and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Memory footprint Teacher: 23241.48 MB
+Memory footprint Student: 12671.44 MB
+Beispiel Train Dataset:
+{'label': 0, 'input_ids': [128000, 7189, 3383, 13182, 1245, 25, 26541, 1, 374, 264, 10025, 1260, 323, 4509, 98981, 4179, 6605, 27402, 13, 1102, 3250, 956, 5030, 1148, 832, 596, 5054, 6325, 527, 1606, 420, 4632, 649, 20781, 387, 4529, 14243, 389, 904, 2237, 13, 1666, 369, 279, 3802, 430, 66746, 8762, 92472, 374, 459, 17392, 20660, 12, 1114, 11, 430, 4536, 956, 837, 13, 358, 3077, 3970], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.

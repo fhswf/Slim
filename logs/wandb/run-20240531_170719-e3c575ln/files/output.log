@@ -1,0 +1,13 @@
+/home/thsch026/my-envs/kdein/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+2,3
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/thsch026/masterarbeit/models/llama3/Meta-Llama-3-8B-Instruct-HF and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Memory footprint Teacher: 30288.18 MB
+Memory footprint Student: 23241.48 MB
+Number of GPUs:  2
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/thsch026/masterarbeit/models/generated/prune/pruneme/merged-llama3 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.

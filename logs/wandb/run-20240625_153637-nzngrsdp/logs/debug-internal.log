@@ -1,0 +1,691 @@
+2024-06-25 15:36:38,023 INFO    StreamThr :204909 [internal.py:wandb_internal():85] W&B internal server running at pid: 204909, started at: 2024-06-25 15:36:38.021027
+2024-06-25 15:36:38,025 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status
+2024-06-25 15:36:38,031 INFO    WriterThread:204909 [datastore.py:open_for_write():87] open: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/run-nzngrsdp.wandb
+2024-06-25 15:36:38,034 DEBUG   SenderThread:204909 [sender.py:send():378] send: header
+2024-06-25 15:36:38,059 DEBUG   SenderThread:204909 [sender.py:send():378] send: run
+2024-06-25 15:36:38,473 INFO    SenderThread:204909 [dir_watcher.py:__init__():211] watching files in: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files
+2024-06-25 15:36:38,473 INFO    SenderThread:204909 [sender.py:_start_run_threads():1123] run started: nzngrsdp with start time 1719329798.024452
+2024-06-25 15:36:38,490 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: check_version
+2024-06-25 15:36:38,492 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: check_version
+2024-06-25 15:36:38,722 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: run_start
+2024-06-25 15:36:38,737 DEBUG   HandlerThread:204909 [system_info.py:__init__():26] System info init
+2024-06-25 15:36:38,737 DEBUG   HandlerThread:204909 [system_info.py:__init__():41] System info init done
+2024-06-25 15:36:38,738 INFO    HandlerThread:204909 [system_monitor.py:start():194] Starting system monitor
+2024-06-25 15:36:38,739 INFO    SystemMonitor:204909 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-25 15:36:38,740 INFO    HandlerThread:204909 [system_monitor.py:probe():214] Collecting system info
+2024-06-25 15:36:38,741 INFO    SystemMonitor:204909 [interfaces.py:start():188] Started cpu monitoring
+2024-06-25 15:36:38,744 INFO    SystemMonitor:204909 [interfaces.py:start():188] Started disk monitoring
+2024-06-25 15:36:38,747 INFO    SystemMonitor:204909 [interfaces.py:start():188] Started gpu monitoring
+2024-06-25 15:36:38,751 INFO    SystemMonitor:204909 [interfaces.py:start():188] Started memory monitoring
+2024-06-25 15:36:38,752 INFO    SystemMonitor:204909 [interfaces.py:start():188] Started network monitoring
+2024-06-25 15:36:38,819 DEBUG   HandlerThread:204909 [system_info.py:probe():150] Probing system
+2024-06-25 15:36:38,828 DEBUG   HandlerThread:204909 [system_info.py:_probe_git():135] Probing git
+2024-06-25 15:36:38,870 DEBUG   HandlerThread:204909 [system_info.py:_probe_git():143] Probing git done
+2024-06-25 15:36:38,871 DEBUG   HandlerThread:204909 [system_info.py:probe():198] Probing system done
+2024-06-25 15:36:38,871 DEBUG   HandlerThread:204909 [system_monitor.py:probe():223] {'os': 'Linux-5.4.0-164-generic-x86_64-with-glibc2.35', 'python': '3.10.0', 'heartbeatAt': '2024-06-25T15:36:38.820267', 'startedAt': '2024-06-25T15:36:37.983504', 'docker': None, 'cuda': None, 'args': ('--model', 'hf', '--model_args', 'pretrained=/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428,tokenizer=/home/thsch026/masterarbeit/Slim/notebooks/llama2_distilled/checkpoint-9428,dtype=float16', '--tasks', 'arc_challenge,hellaswag,truthfulqa_mc2,winogrande,gsm8k', '--device', 'cuda:2', '--batch_size', 'auto', '--wandb_args', 'project=lm-eval-harness-integration', '--log_samples', '--output_path', '/home/thsch026/masterarbeit/experiment/out_wan'), 'state': 'running', 'program': '/home/thsch026/my-envs/eval/bin/lm_eval', 'codePathLocal': None, 'git': {'remote': 'https://github.com/fhswf/Slim', 'commit': '19b42b76100cccb5f1a5dbb55f4dfd967619f074'}, 'email': 'thomas_schmitt@gmx.de', 'root': '/home/thsch026/masterarbeit/Slim', 'host': 'jupyter-thsch026', 'username': 'jovyan', 'executable': '/home/thsch026/my-envs/eval/bin/python3.10', 'cpu_count': 64, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1559.79234375, 'min': 1500.0, 'max': 2400.0}, 'cpu_freq_per_core': [{'current': 2104.886, 'min': 1500.0, 'max': 2400.0}, {'current': 1485.971, 'min': 1500.0, 'max': 2400.0}, {'current': 3297.475, 'min': 1500.0, 'max': 2400.0}, {'current': 1470.582, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.34, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.563, 'min': 1500.0, 'max': 2400.0}, {'current': 3267.894, 'min': 1500.0, 'max': 2400.0}, {'current': 1466.369, 'min': 1500.0, 'max': 2400.0}, {'current': 3299.575, 'min': 1500.0, 'max': 2400.0}, {'current': 1466.532, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.91, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.545, 'min': 1500.0, 'max': 2400.0}, {'current': 1490.825, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.209, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.606, 'min': 1500.0, 'max': 2400.0}, {'current': 1475.617, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.27, 'min': 1500.0, 'max': 2400.0}, {'current': 1496.34, 'min': 1500.0, 'max': 2400.0}, {'current': 1796.977, 'min': 1500.0, 'max': 2400.0}, {'current': 1467.774, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.584, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.894, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.247, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.952, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.585, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.564, 'min': 1500.0, 'max': 2400.0}, {'current': 1464.684, 'min': 1500.0, 'max': 2400.0}, {'current': 3276.087, 'min': 1500.0, 'max': 2400.0}, {'current': 1794.713, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.808, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.917, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.067, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.378, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.277, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.387, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.62, 'min': 1500.0, 'max': 2400.0}, {'current': 1994.801, 'min': 1500.0, 'max': 2400.0}, {'current': 1331.835, 'min': 1500.0, 'max': 2400.0}, {'current': 3124.312, 'min': 1500.0, 'max': 2400.0}, {'current': 1682.484, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.481, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.288, 'min': 1500.0, 'max': 2400.0}, {'current': 1371.798, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.96, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.385, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.862, 'min': 1500.0, 'max': 2400.0}, {'current': 1933.002, 'min': 1500.0, 'max': 2400.0}, {'current': 2004.128, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.533, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.282, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.336, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.805, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.856, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.825, 'min': 1500.0, 'max': 2400.0}, {'current': 1331.975, 'min': 1500.0, 'max': 2400.0}, {'current': 1945.65, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.014, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.355, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.649, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.632, 'min': 1500.0, 'max': 2400.0}, {'current': 1999.86, 'min': 1500.0, 'max': 2400.0}, {'current': 1324.32, 'min': 1500.0, 'max': 2400.0}, {'current': 1799.062, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.568, 'min': 1500.0, 'max': 2400.0}, {'current': 2834.045, 'min': 1500.0, 'max': 2400.0}, {'current': 1347.996, 'min': 1500.0, 'max': 2400.0}, {'current': 2924.287, 'min': 1500.0, 'max': 2400.0}, {'current': 1452.165, 'min': 1500.0, 'max': 2400.0}, {'current': 1390.993, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.173, 'min': 1500.0, 'max': 2400.0}, {'current': 3287.516, 'min': 1500.0, 'max': 2400.0}, {'current': 1465.501, 'min': 1500.0, 'max': 2400.0}, {'current': 3272.601, 'min': 1500.0, 'max': 2400.0}, {'current': 1465.279, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.191, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.207, 'min': 1500.0, 'max': 2400.0}, {'current': 1413.544, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.187, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.258, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.02, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.701, 'min': 1500.0, 'max': 2400.0}, {'current': 1492.467, 'min': 1500.0, 'max': 2400.0}, {'current': 2345.48, 'min': 1500.0, 'max': 2400.0}, {'current': 1482.202, 'min': 1500.0, 'max': 2400.0}, {'current': 1500.35, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.669, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.461, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.365, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.826, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.419, 'min': 1500.0, 'max': 2400.0}, {'current': 1401.412, 'min': 1500.0, 'max': 2400.0}, {'current': 3293.58, 'min': 1500.0, 'max': 2400.0}, {'current': 1706.375, 'min': 1500.0, 'max': 2400.0}, {'current': 1491.049, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.831, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.868, 'min': 1500.0, 'max': 2400.0}, {'current': 1381.129, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.493, 'min': 1500.0, 'max': 2400.0}, {'current': 1487.635, 'min': 1500.0, 'max': 2400.0}, {'current': 1370.372, 'min': 1500.0, 'max': 2400.0}, {'current': 1983.878, 'min': 1500.0, 'max': 2400.0}, {'current': 1332.042, 'min': 1500.0, 'max': 2400.0}, {'current': 2321.879, 'min': 1500.0, 'max': 2400.0}, {'current': 3310.037, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.888, 'min': 1500.0, 'max': 2400.0}, {'current': 1496.055, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.753, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.42, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.852, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.991, 'min': 1500.0, 'max': 2400.0}, {'current': 2000.002, 'min': 1500.0, 'max': 2400.0}, {'current': 1955.553, 'min': 1500.0, 'max': 2400.0}, {'current': 1383.427, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.198, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.195, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.58, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.493, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.993, 'min': 1500.0, 'max': 2400.0}, {'current': 1332.519, 'min': 1500.0, 'max': 2400.0}, {'current': 2001.446, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.754, 'min': 1500.0, 'max': 2400.0}, {'current': 1497.632, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.851, 'min': 1500.0, 'max': 2400.0}, {'current': 1499.962, 'min': 1500.0, 'max': 2400.0}, {'current': 1976.989, 'min': 1500.0, 'max': 2400.0}, {'current': 1385.576, 'min': 1500.0, 'max': 2400.0}, {'current': 1725.268, 'min': 1500.0, 'max': 2400.0}, {'current': 1498.633, 'min': 1500.0, 'max': 2400.0}], 'disk': {'/': {'total': 3638.31258392334, 'used': 1109.0657691955566}}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 503.78936767578125}}
+2024-06-25 15:36:38,872 INFO    HandlerThread:204909 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-25 15:36:38,872 INFO    HandlerThread:204909 [system_monitor.py:probe():227] Publishing system info
+2024-06-25 15:36:38,873 DEBUG   HandlerThread:204909 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-06-25 15:36:39,477 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/conda-environment.yaml
+2024-06-25 15:36:43,951 DEBUG   HandlerThread:204909 [system_info.py:_save_conda():222] Saving conda packages done
+2024-06-25 15:36:43,956 INFO    HandlerThread:204909 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-25 15:36:43,967 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:36:43,967 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-25 15:36:43,968 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:36:43,969 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-06-25 15:36:44,428 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-25 15:36:44,429 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: python_packages
+2024-06-25 15:36:44,429 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:36:44,432 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:36:44,483 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/conda-environment.yaml
+2024-06-25 15:36:44,484 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-metadata.json
+2024-06-25 15:36:44,485 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/requirements.txt
+2024-06-25 15:36:44,645 DEBUG   SenderThread:204909 [sender.py:send():378] send: telemetry
+2024-06-25 15:36:44,705 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/knu95zjc-wandb-metadata.json
+2024-06-25 15:36:45,486 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:36:47,490 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:36:49,650 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:36:54,650 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:36:59,429 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:36:59,430 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:36:59,519 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:36:59,680 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:04,681 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:09,687 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:10,570 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/config.yaml
+2024-06-25 15:37:14,431 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:37:14,432 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:37:15,686 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:20,687 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:25,687 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:29,430 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:37:29,431 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:37:31,639 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:36,640 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:38,754 DEBUG   SystemMonitor:204909 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-25 15:37:38,758 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:37:41,765 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:44,430 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:37:44,431 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:37:47,625 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:52,634 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:53,365 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:37:57,634 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:37:59,430 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:37:59,431 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:38:03,626 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:07,414 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:08,762 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:38:08,764 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:13,765 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:15,036 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:38:15,037 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:38:19,277 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:25,071 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:25,478 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:29,493 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:29,690 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:38:29,692 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:38:30,925 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:31,500 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:33,506 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:35,513 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:35,988 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:37,519 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:38,784 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:38:39,526 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:41,013 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:41,532 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:43,539 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:38:44,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:38:44,576 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:38:46,776 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:51,777 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:56,778 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:38:59,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:38:59,575 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:39:01,604 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:01,787 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:06,788 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:08,768 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:39:11,637 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:11,938 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:13,643 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:14,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:39:14,575 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:39:15,650 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:16,983 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:17,656 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:19,663 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:21,671 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:22,154 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:23,679 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:25,687 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:27,179 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:27,694 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:29,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:39:29,575 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:39:29,701 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:31,708 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:32,360 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:33,715 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:35,723 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:37,406 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:37,730 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:38,770 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:39:39,738 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:41,746 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:42,511 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:43,753 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:44,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:39:44,575 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:39:45,761 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:47,625 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:47,768 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:49,775 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:51,783 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:52,658 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:53,790 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:55,796 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:57,726 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:39:57,803 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:39:59,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:39:59,576 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:39:59,811 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:01,818 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:02,785 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:03,825 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:05,831 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:07,819 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:07,839 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:08,772 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:40:09,847 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:11,854 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:12,838 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:13,860 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:14,574 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:40:14,575 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:40:15,867 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:17,843 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:17,875 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:19,882 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:21,889 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:22,860 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:23,897 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:25,903 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:27,911 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:27,933 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:29,575 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:40:29,576 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:40:29,919 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:31,927 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:32,969 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:33,934 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:35,948 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:37,956 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:38,027 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:38,775 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:40:39,962 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:41,969 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:43,079 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:43,975 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:44,575 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:40:44,576 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:40:45,981 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:47,987 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:48,820 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:48,993 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:40:53,821 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:58,822 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:40:59,575 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:40:59,576 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:41:04,816 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:08,777 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:41:09,060 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:41:10,780 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:14,575 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:41:14,576 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:41:15,809 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:20,810 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:25,115 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:41:26,380 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:29,575 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:41:29,577 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:41:31,739 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:37,152 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:41:37,211 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:38,780 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:41:42,782 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:44,576 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:41:44,577 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:41:47,184 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:41:48,648 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:53,649 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:58,848 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:41:59,225 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:41:59,607 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:41:59,609 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:42:04,781 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:08,783 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:42:09,900 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:11,266 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:42:14,576 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:42:14,577 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:42:15,822 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:21,299 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:42:21,698 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:26,699 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:29,576 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:42:29,578 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:42:31,335 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:42:32,199 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:37,200 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:38,785 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:42:41,368 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:42:42,840 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:44,576 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:42:44,577 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:42:48,795 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:53,411 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:42:54,375 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:59,376 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:42:59,576 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:42:59,578 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:43:03,445 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:43:04,825 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:08,787 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:43:10,790 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:13,479 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:43:14,577 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:43:14,578 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:43:16,758 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:21,759 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:23,513 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:43:27,261 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:29,577 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:43:29,579 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:43:32,436 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:33,549 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:43:37,438 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:38,811 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:43:42,625 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:43,586 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:43:44,577 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:43:44,578 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:43:47,737 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:53,496 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:53,624 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:43:58,497 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:43:59,577 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:43:59,578 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:44:03,663 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:44:04,478 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:08,791 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:44:09,794 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:13,704 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:44:14,578 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:44:14,579 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:44:15,765 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:20,766 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:23,739 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:44:26,269 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:29,578 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:44:29,579 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:44:31,827 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:33,779 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:44:37,056 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:38,794 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:44:42,761 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:43,815 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:44:44,578 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:44:44,579 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:44:47,841 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:53,404 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:53,847 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:44:58,405 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:44:59,578 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:44:59,579 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:45:01,874 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:04,027 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:08,799 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:45:09,802 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:11,913 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:14,578 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:45:14,579 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:45:14,804 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:19,812 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:21,952 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:25,113 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:29,578 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:45:29,580 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:45:30,832 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:31,988 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:35,833 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:38,801 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:45:40,013 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:41,804 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:44,579 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:45:44,580 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:45:47,767 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:50,048 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:52,878 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:58,019 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:45:58,081 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:45:59,579 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:45:59,580 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:46:03,777 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:08,117 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:46:08,804 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:46:08,806 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:13,807 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:14,579 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:46:14,580 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:46:16,147 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:46:19,092 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:24,937 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:26,183 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:46:29,579 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:46:29,581 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:46:30,735 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:34,211 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:46:35,797 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:38,825 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:46:40,828 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:44,248 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:46:44,580 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:46:44,581 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:46:46,807 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:52,277 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:46:52,380 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:57,381 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:46:59,579 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:46:59,581 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:47:00,305 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:02,784 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:08,694 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:08,810 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:47:10,340 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:13,812 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:14,580 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:47:14,581 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:47:18,371 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:19,270 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:24,271 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:26,402 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:29,580 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:29,581 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:47:29,582 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:47:34,431 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:35,056 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:38,813 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:47:40,818 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:44,468 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:44,583 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:47:44,584 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:47:46,800 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:52,498 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:52,544 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:57,517 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:47:58,424 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:47:59,951 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:47:59,953 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:48:04,159 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:08,815 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:48:09,818 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:14,643 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:48:14,644 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:48:15,807 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:20,808 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:25,809 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:29,644 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:48:29,645 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:48:30,839 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:35,840 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:38,820 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:48:39,643 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:48:41,824 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:44,645 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-25 15:48:44,647 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: stop_status
+2024-06-25 15:48:45,038 DEBUG   SenderThread:204909 [sender.py:send():378] send: config
+2024-06-25 15:48:45,087 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:45,090 DEBUG   SenderThread:204909 [sender.py:send():378] send: telemetry
+2024-06-25 15:48:45,091 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:48:45,094 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:48:45,095 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:48:45,096 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:48:45,097 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:48:45,532 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:45,533 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:48:45,665 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:48:45,667 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/evaluation/eval_results_1_bd129121bcf321f272fb.table.json
+2024-06-25 15:48:45,670 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media
+2024-06-25 15:48:45,671 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:45,672 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/evaluation
+2024-06-25 15:48:45,937 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:46,149 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:46,153 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/61cjv7zn-media/table/evaluation/eval_results_1_bd129121bcf321f272fb.table.json
+2024-06-25 15:48:46,669 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media
+2024-06-25 15:48:46,670 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:46,671 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/evaluation
+2024-06-25 15:48:46,725 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:46,802 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:46,922 INFO    wandb-upload_0:204909 [upload_job.py:push():88] Uploaded file /home/thsch026/.local/share/wandb/artifacts/staging/tmpwt9nck6g
+2024-06-25 15:48:47,091 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:47,511 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:47,624 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact run-nzngrsdp-evaluationeval_results - {'id': 'QXJ0aWZhY3Q6OTI1NzczMjU3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjYxODQ2Mw==', 'latestArtifact': None}}
+2024-06-25 15:48:47,625 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:48:47,625 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:47,626 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file media/table/evaluation/eval_results_1_bd129121bcf321f272fb.table.json with policy now
+2024-06-25 15:48:47,630 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:48:47,631 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:48:47,634 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:48:47,638 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:48:47,674 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:48:47,675 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/winogrande_eval_results_2_d6711110792b45982c41.table.json
+2024-06-25 15:48:47,678 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:47,903 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:47,975 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:48,141 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/w03nbzv3-media/table/evaluation/eval_results_1_bd129121bcf321f272fb.table.json
+2024-06-25 15:48:48,613 INFO    wandb-upload_1:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/u74a2ktn-media/table/winogrande_eval_results_2_d6711110792b45982c41.table.json
+2024-06-25 15:48:48,679 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/truthfulqa_eval_results_3_5619704f12fe8b743707.table.json
+2024-06-25 15:48:48,681 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:48,761 INFO    wandb-upload_2:204909 [upload_job.py:push():88] Uploaded file /tmp/tmptbc_vd41/results.json
+2024-06-25 15:48:49,496 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact results - {'id': 'QXJ0aWZhY3Q6OTI1NzczNDA5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjEzNzgwMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1MzQ4OTY2', 'versionIndex': 35}}}
+2024-06-25 15:48:49,497 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:48:49,810 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:49,821 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/vjeo0rep-media/table/truthfulqa_eval_results_3_5619704f12fe8b743707.table.json
+2024-06-25 15:48:50,956 INFO    wandb-upload_1:204909 [upload_job.py:push():88] Uploaded file /home/thsch026/.local/share/wandb/artifacts/staging/tmpsiphps3h
+2024-06-25 15:48:51,660 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact run-nzngrsdp-winogrande_eval_results - {'id': 'QXJ0aWZhY3Q6OTI1NzczNjE1', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjYxODc3Mg==', 'latestArtifact': None}}
+2024-06-25 15:48:51,661 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:48:51,662 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file media/table/winogrande_eval_results_2_d6711110792b45982c41.table.json with policy now
+2024-06-25 15:48:51,665 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:48:51,666 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:48:51,669 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:48:51,674 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:48:51,694 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:48:52,231 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:52,866 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:53,062 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/qg0q0haj-media/table/winogrande_eval_results_2_d6711110792b45982c41.table.json
+2024-06-25 15:48:53,370 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:53,706 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/multiple_choice_eval_results_4_21ab0e331dc128d5fedb.table.json
+2024-06-25 15:48:53,709 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:53,792 INFO    wandb-upload_1:204909 [upload_job.py:push():88] Uploaded file /tmp/tmp45g43gxq/winogrande_eval_samples.json
+2024-06-25 15:48:54,163 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:54,368 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:54,557 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact winogrande - {'id': 'QXJ0aWZhY3Q6OTI1NzczODQ2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTU2MDgxMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1MzQ5MDMy', 'versionIndex': 18}}}
+2024-06-25 15:48:54,558 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:48:54,558 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:48:54,713 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/math_word_problems_eval_results_5_8a286b460041881d20ac.table.json
+2024-06-25 15:48:54,715 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:54,723 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:55,208 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: log_artifact
+2024-06-25 15:48:55,227 INFO    wandb-upload_2:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/ev6ucex5-media/table/multiple_choice_eval_results_4_21ab0e331dc128d5fedb.table.json
+2024-06-25 15:48:55,290 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-25 15:48:55,719 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_created():271] file/dir created: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/ai2_arc_eval_results_6_fd31191dc37912492297.table.json
+2024-06-25 15:48:55,723 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table
+2024-06-25 15:48:56,239 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/utbzgk6k-media/table/math_word_problems_eval_results_5_8a286b460041881d20ac.table.json
+2024-06-25 15:48:56,820 INFO    wandb-upload_2:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/7i8iyetf-media/table/ai2_arc_eval_results_6_fd31191dc37912492297.table.json
+2024-06-25 15:48:56,911 INFO    wandb-upload_1:204909 [upload_job.py:push():88] Uploaded file /tmp/tmp29r4gvvx/truthfulqa_mc2_eval_samples.json
+2024-06-25 15:48:57,589 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact truthfulqa_mc2 - {'id': 'QXJ0aWZhY3Q6OTI1Nzc0MTQ2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTU5MTE3MQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1MjQxMzYy', 'versionIndex': 14}}}
+2024-06-25 15:48:57,590 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:48:59,248 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 15:48:59,385 INFO    wandb-upload_0:204909 [upload_job.py:push():88] Uploaded file /home/thsch026/.local/share/wandb/artifacts/staging/tmpw3o8ri_i
+2024-06-25 15:49:00,038 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact run-nzngrsdp-truthfulqa_eval_results - {'id': 'QXJ0aWZhY3Q6OTI1Nzc0NDMw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjYxOTQ3MQ==', 'latestArtifact': None}}
+2024-06-25 15:49:00,044 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:49:00,235 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:49:00,236 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file media/table/truthfulqa_eval_results_3_5619704f12fe8b743707.table.json with policy now
+2024-06-25 15:49:00,238 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:49:00,239 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:49:00,242 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:49:00,242 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:49:00,749 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/config.yaml
+2024-06-25 15:49:00,750 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:49:01,482 INFO    wandb-upload_1:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/dzq6etxw-media/table/truthfulqa_eval_results_3_5619704f12fe8b743707.table.json
+2024-06-25 15:49:03,977 INFO    wandb-upload_0:204909 [upload_job.py:push():88] Uploaded file /tmp/tmp2mfymf6q/hellaswag_eval_samples.json
+2024-06-25 15:49:04,249 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-25 15:49:04,869 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact hellaswag - {'id': 'QXJ0aWZhY3Q6OTI1Nzc0NzU3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3MjEzNzgxMw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1MzQ5MTE3', 'versionIndex': 18}}}
+2024-06-25 15:49:04,870 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:49:06,996 INFO    wandb-upload_2:204909 [upload_job.py:push():88] Uploaded file /home/thsch026/.local/share/wandb/artifacts/staging/tmpsd1qp09u
+2024-06-25 15:49:07,832 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact run-nzngrsdp-multiple_choice_eval_results - {'id': 'QXJ0aWZhY3Q6OTI1Nzc1MDU4', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjYxOTk5Mw==', 'latestArtifact': None}}
+2024-06-25 15:49:07,833 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:49:07,834 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:49:07,834 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file media/table/multiple_choice_eval_results_4_21ab0e331dc128d5fedb.table.json with policy now
+2024-06-25 15:49:07,838 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:49:07,839 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:49:07,842 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:49:07,843 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:49:08,802 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:49:09,250 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-25 15:49:09,457 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/7xoc6yo7-media/table/multiple_choice_eval_results_4_21ab0e331dc128d5fedb.table.json
+2024-06-25 15:49:10,530 INFO    wandb-upload_2:204909 [upload_job.py:push():88] Uploaded file /tmp/tmpgb4nz0aq/gsm8k_eval_samples.json
+2024-06-25 15:49:11,286 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact gsm8k - {'id': 'QXJ0aWZhY3Q6OTI1Nzc1Mzc3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTU5MTI3NQ==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1MzQ5MjI1', 'versionIndex': 14}}}
+2024-06-25 15:49:11,287 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:49:13,634 INFO    wandb-upload_1:204909 [upload_job.py:push():88] Uploaded file /home/thsch026/.local/share/wandb/artifacts/staging/tmpxcydnmm2
+2024-06-25 15:49:14,251 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-25 15:49:14,360 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact run-nzngrsdp-math_word_problems_eval_results - {'id': 'QXJ0aWZhY3Q6OTI1Nzc1Njc3', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjYyMDUyMA==', 'latestArtifact': None}}
+2024-06-25 15:49:14,361 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:49:14,362 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:49:14,362 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file media/table/math_word_problems_eval_results_5_8a286b460041881d20ac.table.json with policy now
+2024-06-25 15:49:14,367 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:49:14,368 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:49:14,371 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:49:14,372 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:49:14,838 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:49:16,117 INFO    wandb-upload_2:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/o5wxae55-media/table/math_word_problems_eval_results_5_8a286b460041881d20ac.table.json
+2024-06-25 15:49:16,546 INFO    wandb-upload_1:204909 [upload_job.py:push():88] Uploaded file /tmp/tmpk63m9fsg/arc_challenge_eval_samples.json
+2024-06-25 15:49:17,253 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact arc_challenge - {'id': 'QXJ0aWZhY3Q6OTI1Nzc1OTMx', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjE3NTU5MTMxNg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6OTI1MzQ5MzQ5', 'versionIndex': 17}}}
+2024-06-25 15:49:17,254 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: log_artifact
+2024-06-25 15:49:18,621 INFO    wandb-upload_0:204909 [upload_job.py:push():88] Uploaded file /home/thsch026/.local/share/wandb/artifacts/staging/tmpd4hlq5og
+2024-06-25 15:49:19,252 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: keepalive
+2024-06-25 15:49:19,406 INFO    SenderThread:204909 [sender.py:send_request_log_artifact():1455] logged artifact run-nzngrsdp-ai2_arc_eval_results - {'id': 'QXJ0aWZhY3Q6OTI1Nzc2MjAz', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIzMjYyMDk2Nw==', 'latestArtifact': None}}
+2024-06-25 15:49:19,407 DEBUG   SenderThread:204909 [sender.py:send():378] send: files
+2024-06-25 15:49:19,407 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:49:19,408 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file media/table/ai2_arc_eval_results_6_fd31191dc37912492297.table.json with policy now
+2024-06-25 15:49:19,411 DEBUG   SenderThread:204909 [sender.py:send():378] send: history
+2024-06-25 15:49:19,412 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: summary_record
+2024-06-25 15:49:19,416 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:49:19,421 DEBUG   SenderThread:204909 [sender.py:send():378] send: telemetry
+2024-06-25 15:49:19,422 DEBUG   SenderThread:204909 [sender.py:send():378] send: exit
+2024-06-25 15:49:19,422 INFO    SenderThread:204909 [sender.py:send_exit():585] handling exit code: 0
+2024-06-25 15:49:19,423 INFO    SenderThread:204909 [sender.py:send_exit():587] handling runtime: 739
+2024-06-25 15:49:19,427 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:49:19,428 INFO    SenderThread:204909 [sender.py:send_exit():593] send defer
+2024-06-25 15:49:19,429 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 15:49:19,429 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,430 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:49:19,430 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-25 15:49:19,434 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,434 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 0
+2024-06-25 15:49:19,435 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 1
+2024-06-25 15:49:19,436 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,437 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-25 15:49:19,438 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,438 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 1
+2024-06-25 15:49:19,439 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 2
+2024-06-25 15:49:19,440 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,441 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-25 15:49:19,441 INFO    HandlerThread:204909 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-25 15:49:19,442 DEBUG   SystemMonitor:204909 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-25 15:49:19,443 INFO    HandlerThread:204909 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-25 15:49:19,443 DEBUG   SystemMonitor:204909 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-25 15:49:19,444 INFO    HandlerThread:204909 [interfaces.py:finish():200] Joined disk monitor
+2024-06-25 15:49:19,480 INFO    HandlerThread:204909 [interfaces.py:finish():200] Joined gpu monitor
+2024-06-25 15:49:19,482 INFO    HandlerThread:204909 [interfaces.py:finish():200] Joined memory monitor
+2024-06-25 15:49:19,483 INFO    HandlerThread:204909 [interfaces.py:finish():200] Joined network monitor
+2024-06-25 15:49:19,484 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,485 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 2
+2024-06-25 15:49:19,485 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 3
+2024-06-25 15:49:19,486 DEBUG   SenderThread:204909 [sender.py:send():378] send: stats
+2024-06-25 15:49:19,486 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,488 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-25 15:49:19,489 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,490 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 3
+2024-06-25 15:49:19,490 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 4
+2024-06-25 15:49:19,491 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,491 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-25 15:49:19,492 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,493 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 4
+2024-06-25 15:49:19,494 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 5
+2024-06-25 15:49:19,495 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,496 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-25 15:49:19,497 DEBUG   SenderThread:204909 [sender.py:send():378] send: summary
+2024-06-25 15:49:19,500 INFO    SenderThread:204909 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-06-25 15:49:19,502 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,502 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 5
+2024-06-25 15:49:19,503 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 6
+2024-06-25 15:49:19,504 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,505 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-25 15:49:19,505 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,506 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 6
+2024-06-25 15:49:19,512 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:49:19,687 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 7
+2024-06-25 15:49:19,688 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:19,689 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-25 15:49:19,690 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:19,691 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 7
+2024-06-25 15:49:19,878 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/config.yaml
+2024-06-25 15:49:19,880 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:49:20,252 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 15:49:20,510 INFO    wandb-upload_1:204909 [upload_job.py:push():130] Uploaded file /tmp/tmpfp7vd3twwandb/eat3fk5o-media/table/ai2_arc_eval_results_6_fd31191dc37912492297.table.json
+2024-06-25 15:49:21,895 INFO    Thread-12 :204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:49:23,503 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 8
+2024-06-25 15:49:23,504 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 15:49:23,505 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:23,507 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-25 15:49:23,507 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:23,508 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 8
+2024-06-25 15:49:23,509 INFO    SenderThread:204909 [job_builder.py:build():432] Attempting to build job artifact
+2024-06-25 15:49:23,514 INFO    SenderThread:204909 [job_builder.py:_get_source_type():565] is repo sourced job
+2024-06-25 15:49:23,515 WARNING SenderThread:204909 [job_builder.py:_log_if_verbose():267] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-06-25 15:49:23,515 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 9
+2024-06-25 15:49:23,516 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:23,517 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-25 15:49:23,518 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:23,519 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 9
+2024-06-25 15:49:23,519 INFO    SenderThread:204909 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-25 15:49:23,903 INFO    SenderThread:204909 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:49:23,908 INFO    SenderThread:204909 [dir_watcher.py:finish():388] scan: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files
+2024-06-25 15:49:23,909 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log output.log
+2024-06-25 15:49:23,910 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-metadata.json wandb-metadata.json
+2024-06-25 15:49:23,914 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/requirements.txt requirements.txt
+2024-06-25 15:49:23,916 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/conda-environment.yaml conda-environment.yaml
+2024-06-25 15:49:23,921 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json wandb-summary.json
+2024-06-25 15:49:23,925 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/config.yaml config.yaml
+2024-06-25 15:49:23,937 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/ai2_arc_eval_results_6_fd31191dc37912492297.table.json media/table/ai2_arc_eval_results_6_fd31191dc37912492297.table.json
+2024-06-25 15:49:23,938 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/math_word_problems_eval_results_5_8a286b460041881d20ac.table.json media/table/math_word_problems_eval_results_5_8a286b460041881d20ac.table.json
+2024-06-25 15:49:23,938 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/truthfulqa_eval_results_3_5619704f12fe8b743707.table.json media/table/truthfulqa_eval_results_3_5619704f12fe8b743707.table.json
+2024-06-25 15:49:23,939 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/winogrande_eval_results_2_d6711110792b45982c41.table.json media/table/winogrande_eval_results_2_d6711110792b45982c41.table.json
+2024-06-25 15:49:23,939 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/multiple_choice_eval_results_4_21ab0e331dc128d5fedb.table.json media/table/multiple_choice_eval_results_4_21ab0e331dc128d5fedb.table.json
+2024-06-25 15:49:23,940 INFO    SenderThread:204909 [dir_watcher.py:finish():402] scan save: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/media/table/evaluation/eval_results_1_bd129121bcf321f272fb.table.json media/table/evaluation/eval_results_1_bd129121bcf321f272fb.table.json
+2024-06-25 15:49:23,941 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 10
+2024-06-25 15:49:23,942 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:23,942 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-25 15:49:23,943 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:23,944 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 10
+2024-06-25 15:49:23,944 INFO    SenderThread:204909 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-25 15:49:24,254 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 15:49:24,255 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 15:49:24,309 INFO    wandb-upload_0:204909 [upload_job.py:push():130] Uploaded file /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/output.log
+2024-06-25 15:49:24,310 INFO    wandb-upload_2:204909 [upload_job.py:push():130] Uploaded file /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/conda-environment.yaml
+2024-06-25 15:49:24,318 INFO    wandb-upload_1:204909 [upload_job.py:push():130] Uploaded file /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/requirements.txt
+2024-06-25 15:49:24,463 INFO    wandb-upload_3:204909 [upload_job.py:push():130] Uploaded file /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/wandb-summary.json
+2024-06-25 15:49:24,473 INFO    wandb-upload_4:204909 [upload_job.py:push():130] Uploaded file /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/files/config.yaml
+2024-06-25 15:49:24,674 INFO    Thread-11 (_thread_body):204909 [sender.py:transition_state():613] send defer: 11
+2024-06-25 15:49:24,676 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:24,676 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-25 15:49:24,678 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:24,679 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 11
+2024-06-25 15:49:24,679 INFO    SenderThread:204909 [file_pusher.py:join():175] waiting for file pusher
+2024-06-25 15:49:24,682 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 12
+2024-06-25 15:49:24,683 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:24,684 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-25 15:49:24,685 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: status_report
+2024-06-25 15:49:24,685 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:24,686 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 12
+2024-06-25 15:49:24,687 INFO    SenderThread:204909 [file_stream.py:finish():601] file stream finish called
+2024-06-25 15:49:25,200 INFO    SenderThread:204909 [file_stream.py:finish():605] file stream finish is done
+2024-06-25 15:49:25,201 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 13
+2024-06-25 15:49:25,202 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:25,203 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-25 15:49:25,203 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:25,204 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 13
+2024-06-25 15:49:25,205 INFO    SenderThread:204909 [sender.py:transition_state():613] send defer: 14
+2024-06-25 15:49:25,206 DEBUG   SenderThread:204909 [sender.py:send():378] send: final
+2024-06-25 15:49:25,206 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: defer
+2024-06-25 15:49:25,206 DEBUG   SenderThread:204909 [sender.py:send():378] send: footer
+2024-06-25 15:49:25,207 INFO    HandlerThread:204909 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-25 15:49:25,208 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: defer
+2024-06-25 15:49:25,209 INFO    SenderThread:204909 [sender.py:send_request_defer():609] handle sender defer: 14
+2024-06-25 15:49:25,212 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-25 15:49:25,213 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: poll_exit
+2024-06-25 15:49:25,215 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-25 15:49:25,217 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: server_info
+2024-06-25 15:49:25,218 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-25 15:49:25,218 DEBUG   SenderThread:204909 [sender.py:send_request():405] send_request: server_info
+2024-06-25 15:49:25,219 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-25 15:49:25,373 DEBUG   HandlerThread:204909 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-25 15:49:25,374 INFO    HandlerThread:204909 [handler.py:finish():882] shutting down handler
+2024-06-25 15:49:26,218 INFO    WriterThread:204909 [datastore.py:close():296] close: /home/thsch026/masterarbeit/Slim/notebooks/wandb/run-20240625_153637-nzngrsdp/run-nzngrsdp.wandb
+2024-06-25 15:49:26,373 INFO    SenderThread:204909 [sender.py:finish():1545] shutting down sender
+2024-06-25 15:49:26,374 INFO    SenderThread:204909 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-25 15:49:26,375 INFO    SenderThread:204909 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,14 @@
+pytorch-revgrad           0.2.0                    pypi_0    pypi
+torch                     2.0.0+cu117              pypi_0    pypi
+torchaudio                2.0.1+cu117              pypi_0    pypi
+torchvision               0.15.1+cu117             pypi_0    pypi
+2,3
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/thsch026/masterarbeit/models/generated/prune/pruneme/merged-llama3 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Memory footprint Teacher: 23241.48 MB
+Memory footprint Student: 12671.44 MB
+Number of GPUs:  2
+Some weights of LlamaForSequenceClassification were not initialized from the model checkpoint at /home/thsch026/masterarbeit/models/generated/prune/pruneme/merged-llama3-small and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.

@@ -1,0 +1,1 @@
+/home/thsch026/my-envs/kdein/lib/python3.10/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
