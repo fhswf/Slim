@@ -108,7 +108,7 @@ python-dateutil==2.9.0.post0
 pytz==2024.1
 pyzmq==26.0.3
 regex==2024.4.28
-requests==2.31.0
+requests==2.32.2
 rouge-score==0.1.2
 sacrebleu==2.4.2
 safetensors==0.4.3
