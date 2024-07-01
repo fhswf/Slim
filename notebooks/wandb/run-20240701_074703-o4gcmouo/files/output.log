@@ -1,0 +1,11 @@
+
+2024-07-01:07:47:07,636 INFO     [__main__.py:254] Verbosity set to INFO
+2024-07-01:07:47:17,709 INFO     [__main__.py:341] Selected Tasks: ['arc_challenge', 'hellaswag', 'truthfulqa_mc2', 'winogrande']
+2024-07-01:07:47:17,716 INFO     [evaluator.py:141] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+2024-07-01:07:47:17,716 INFO     [evaluator.py:187] Initializing hf model, with arguments: {'pretrained': '/home/thsch026/masterarbeit/models/generated/prune/pruneme/Meta-Llama-3-8B-Instruct-12_Ext', 'dtype': 'float16'}
+2024-07-01:07:47:17,769 WARNING  [logging.py:61] Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2024-07-01:07:47:17,770 INFO     [huggingface.py:173] Device not specified
+2024-07-01:07:47:17,770 INFO     [huggingface.py:174] Cuda Available? True
+
+
+Loading checkpoint shards: 100%|██████████████████| 3/3 [01:37<00:00, 32.49s/it]

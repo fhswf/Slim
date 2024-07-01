@@ -1,0 +1,224 @@
+
+2024-07-01:07:33:23,759 INFO     [__main__.py:254] Verbosity set to INFO
+2024-07-01:07:33:49,640 INFO     [__main__.py:341] Selected Tasks: ['arc_challenge', 'gsm8k', 'hellaswag', 'truthfulqa_mc2', 'winogrande']
+2024-07-01:07:33:49,647 INFO     [evaluator.py:141] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+2024-07-01:07:33:49,647 INFO     [evaluator.py:187] Initializing hf model, with arguments: {'pretrained': '/home/thsch026/masterarbeit/models/generated/prune/pruneme/Meta-Llama-3-8B-Instruct-12_Ext', 'dtype': 'float16'}
+2024-07-01:07:33:49,712 WARNING  [logging.py:61] Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2024-07-01:07:33:49,712 INFO     [huggingface.py:173] Device not specified
+2024-07-01:07:33:49,713 INFO     [huggingface.py:174] Cuda Available? True
+
+
+
+Loading checkpoint shards: 100%|██████████████████| 3/3 [01:48<00:00, 36.02s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for winogrande contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/winogrande
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+2024-07-01:07:36:09,883 INFO     [task.py:398] Building contexts for winogrande on rank 0...
+100%|███████████████████████████████████| 1267/1267 [00:00<00:00, 100790.58it/s]
+2024-07-01:07:36:09,938 INFO     [task.py:398] Building contexts for truthfulqa_mc2 on rank 0...
+100%|████████████████████████████████████████| 817/817 [00:00<00:00, 986.24it/s]
+2024-07-01:07:36:10,824 INFO     [task.py:398] Building contexts for hellaswag on rank 0...
+
+100%|███████████████████████████████████| 10042/10042 [00:02<00:00, 3348.19it/s]
+2024-07-01:07:36:16,260 INFO     [task.py:398] Building contexts for gsm8k on rank 0...
+
+
+100%|██████████████████████████████████████| 1319/1319 [00:05<00:00, 233.22it/s]
+2024-07-01:07:36:21,990 INFO     [task.py:398] Building contexts for arc_challenge on rank 0...
+100%|█████████████████████████████████████| 1172/1172 [00:00<00:00, 1603.09it/s]
+2024-07-01:07:36:22,780 INFO     [evaluator.py:404] Running loglikelihood requests
+Running loglikelihood requests:   0%|                 | 0/53271 [00:00<?, ?it/s]
+Passed argument batch_size = auto:1. Detecting largest batch size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running loglikelihood requests: 100%|████| 53271/53271 [04:11<00:00, 211.73it/s]
+2024-07-01:07:40:52,250 INFO     [evaluator.py:404] Running generate_until requests
+Running generate_until requests:   0%|                 | 0/1319 [00:00<?, ?it/s]
+Passed argument batch_size = auto. Detecting largest batch size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running generate_until requests:   3%|▏     | 41/1319 [02:33<1:04:38,  3.03s/it]Traceback (most recent call last):
+  File "/home/thsch026/my-envs/eval/bin/lm_eval", line 8, in <module>
+    sys.exit(cli_evaluate())
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/__main__.py", line 347, in cli_evaluate
+    results = evaluator.simple_evaluate(
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/utils.py", line 316, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/evaluator.py", line 265, in simple_evaluate
+    results = evaluate(
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/utils.py", line 316, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/evaluator.py", line 415, in evaluate
+    resps = getattr(lm, reqtype)(cloned_reqs)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/models/huggingface.py", line 1247, in generate_until
+    cont = self._model_generate(
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/models/huggingface.py", line 819, in _model_generate
+    return self.model.generate(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/generation/utils.py", line 1576, in generate
+    result = self._greedy_search(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/generation/utils.py", line 2494, in _greedy_search
+    outputs = self(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1211, in forward
+    outputs = self.model(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1018, in forward
+    layer_outputs = decoder_layer(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 741, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 371, in forward
+    attn_weights = torch.matmul(query_states, key_states.transpose(2, 3)) / math.sqrt(self.head_dim)
+KeyboardInterrupt

@@ -1,0 +1,10 @@
+slices:
+  - sources:
+      - model: mistralai/Mistral-7B-Instruct-v0.2
+        layer_range: [0,19]
+  - sources:
+      - model: mistralai/Mistral-7B-Instruct-v0.2
+        layer_range: [31,32]
+            
+merge_method: passthrough
+dtype: bfloat16

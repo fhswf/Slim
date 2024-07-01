@@ -1,0 +1,156 @@
+
+2024-07-01:07:26:12,155 INFO     [__main__.py:254] Verbosity set to INFO
+2024-07-01:07:26:22,708 INFO     [__main__.py:341] Selected Tasks: ['arc_challenge', 'gsm8k', 'hellaswag', 'truthfulqa_mc2', 'winogrande']
+2024-07-01:07:26:22,714 INFO     [evaluator.py:141] Setting random seed to 0 | Setting numpy seed to 1234 | Setting torch manual seed to 1234
+2024-07-01:07:26:22,714 INFO     [evaluator.py:187] Initializing hf model, with arguments: {'pretrained': '/home/thsch026/masterarbeit/models/generated/prune/pruneme/Meta-Llama-3-8B-Instruct-12_Ext', 'dtype': 'float16'}
+2024-07-01:07:26:22,787 WARNING  [logging.py:61] Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
+2024-07-01:07:26:22,787 INFO     [huggingface.py:173] Device not specified
+2024-07-01:07:26:22,788 INFO     [huggingface.py:174] Cuda Available? True
+
+
+
+Loading checkpoint shards: 100%|██████████████████| 3/3 [01:37<00:00, 32.66s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for winogrande contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/winogrande
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+2024-07-01:07:28:33,711 INFO     [task.py:398] Building contexts for winogrande on rank 0...
+100%|████████████████████████████████████| 1267/1267 [00:00<00:00, 99507.22it/s]
+2024-07-01:07:28:33,768 INFO     [task.py:398] Building contexts for truthfulqa_mc2 on rank 0...
+100%|████████████████████████████████████████| 817/817 [00:00<00:00, 914.58it/s]
+2024-07-01:07:28:34,717 INFO     [task.py:398] Building contexts for hellaswag on rank 0...
+
+100%|███████████████████████████████████| 10042/10042 [00:03<00:00, 3207.35it/s]
+2024-07-01:07:28:40,271 INFO     [task.py:398] Building contexts for gsm8k on rank 0...
+
+
+100%|██████████████████████████████████████| 1319/1319 [00:05<00:00, 222.61it/s]
+2024-07-01:07:28:46,265 INFO     [task.py:398] Building contexts for arc_challenge on rank 0...
+100%|█████████████████████████████████████| 1172/1172 [00:00<00:00, 1512.96it/s]
+2024-07-01:07:28:47,102 INFO     [evaluator.py:404] Running loglikelihood requests
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running loglikelihood requests:  35%|█▍  | 18719/53271 [02:56<04:33, 126.56it/s]Traceback (most recent call last):
+  File "/home/thsch026/my-envs/eval/bin/lm_eval", line 8, in <module>
+    sys.exit(cli_evaluate())
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/__main__.py", line 347, in cli_evaluate
+    results = evaluator.simple_evaluate(
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/utils.py", line 316, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/evaluator.py", line 265, in simple_evaluate
+    results = evaluate(
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/utils.py", line 316, in _wrapper
+    return fn(*args, **kwargs)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/evaluator.py", line 415, in evaluate
+    resps = getattr(lm, reqtype)(cloned_reqs)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/api/model.py", line 336, in loglikelihood
+    return self._loglikelihood_tokens(new_reqs, disable_tqdm=disable_tqdm)
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/models/huggingface.py", line 1084, in _loglikelihood_tokens
+    self._model_call(batched_inps, **call_kwargs), dim=-1
+  File "/home/thsch026/masterarbeit/work/lm-evaluation-harness/lm_eval/models/huggingface.py", line 799, in _model_call
+    return self.model(inps).logits
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1211, in forward
+    outputs = self.model(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 1018, in forward
+    layer_outputs = decoder_layer(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 741, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/thsch026/my-envs/eval/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 388, in forward
+    attn_output = attn_output.transpose(1, 2).contiguous()
+KeyboardInterrupt
