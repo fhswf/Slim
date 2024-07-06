@@ -9,3 +9,163 @@
 
 
 Loading checkpoint shards: 100%|██████████████████| 3/3 [01:37<00:00, 32.49s/it]
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for hellaswag contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/hellaswag
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+/home/thsch026/my-envs/eval/lib/python3.10/site-packages/datasets/load.py:1486: FutureWarning: The repository for winogrande contains custom code which must be executed to correctly load the dataset. You can inspect the repository content at https://hf.co/datasets/winogrande
+You can avoid this message in future by passing the argument `trust_remote_code=True`.
+Passing `trust_remote_code=True` will be mandatory to load this dataset from the next major release of `datasets`.
+  warnings.warn(
+2024-07-01:07:49:21,379 INFO     [task.py:398] Building contexts for winogrande on rank 0...
+100%|████████████████████████████████████| 1267/1267 [00:00<00:00, 98716.09it/s]
+2024-07-01:07:49:21,437 INFO     [task.py:398] Building contexts for truthfulqa_mc2 on rank 0...
+100%|████████████████████████████████████████| 817/817 [00:00<00:00, 979.07it/s]
+2024-07-01:07:49:22,324 INFO     [task.py:398] Building contexts for hellaswag on rank 0...
+
+100%|███████████████████████████████████| 10042/10042 [00:03<00:00, 3260.09it/s]
+2024-07-01:07:49:27,935 INFO     [task.py:398] Building contexts for arc_challenge on rank 0...
+100%|█████████████████████████████████████| 1172/1172 [00:00<00:00, 1539.90it/s]
+2024-07-01:07:49:28,765 INFO     [evaluator.py:404] Running loglikelihood requests
+Running loglikelihood requests:   0%|                 | 0/53271 [00:00<?, ?it/s]
+Passed argument batch_size = auto:1. Detecting largest batch size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Running loglikelihood requests: 100%|████| 53271/53271 [04:10<00:00, 212.45it/s]
+2024-07-01:07:54:11,952 WARNING  [huggingface.py:1304] Failed to get model SHA for /home/thsch026/masterarbeit/models/generated/prune/pruneme/Meta-Llama-3-8B-Instruct-12_Ext at revision main. Error: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/home/thsch026/masterarbeit/models/generated/prune/pruneme/Meta-Llama-3-8B-Instruct-12_Ext'. Use `repo_type` argument if needed.
+2024-07-01:07:54:26,529 INFO     [evaluation_tracker.py:132] Saving results aggregated
+2024-07-01:07:54:26,549 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-07-01:07:54:26,649 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-07-01:07:54:27,798 INFO     [evaluation_tracker.py:203] Saving samples results
+2024-07-01:07:54:27,929 INFO     [evaluation_tracker.py:203] Saving samples results
+hf (pretrained=/home/thsch026/masterarbeit/models/generated/prune/pruneme/Meta-Llama-3-8B-Instruct-12_Ext,dtype=float16), gen_kwargs: (None), limit: None, num_fewshot: None, batch_size: auto (64)
+|    Tasks     |Version|Filter|n-shot| Metric |Value |   |Stderr|
+|--------------|------:|------|-----:|--------|-----:|---|-----:|
+|winogrande    |      1|none  |     0|acc     |0.5706|±  |0.0139|
+|truthfulqa_mc2|      2|none  |     0|acc     |0.5201|±  |0.0164|
+|hellaswag     |      1|none  |     0|acc     |0.3294|±  |0.0047|
+|              |       |none  |     0|acc_norm|0.4204|±  |0.0049|
+|arc_challenge |      1|none  |     0|acc     |0.2935|±  |0.0133|
+|              |       |none  |     0|acc_norm|0.3208|±  |0.0136|
