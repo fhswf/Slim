@@ -177,7 +177,7 @@ jupyterlab-git==0.41.0
 jupyterlab-lsp==4.3.0
 jupyterlab-pygments==0.2.2
 jupyterlab-widgets==3.0.7
-jupyterlab==3.6.3
+jupyterlab==3.6.8
 jupyterlab_server==2.22.1
 keras-tuner==1.4.7
 keras==2.11.0
