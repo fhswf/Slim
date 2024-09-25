@@ -1,9 +1,0 @@
-Beispiel Train Dataset:
-{'answers': ['Yes'], 'input_ids': [128000, 16514, 436, 80794, 312, 18851, 264, 97167], 'attention_mask': [1, 1, 1, 1, 1, 1, 1, 1]}
-Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
-To disable this warning, you can either:
-	- Avoid using `tokenizers` before the fork if possible
-	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
-['answers', 'input_ids', 'attention_mask']
-{'answers': ['Results-Based Accountability is a disciplined way of thinking and taking action that communities can use to improve the lives of children, youth, families, adults and the community as a whole.'], 'input_ids': [128000, 12840, 374, 436, 4749], 'attention_mask': [1, 1, 1, 1, 1]}

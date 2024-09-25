@@ -1,0 +1,20 @@
+Llama-2-7b-chat-hf_prune_lora_awq,24.700245353750358,3.08
+Llama-2-7b-chat,31.076874287712926,12.56
+Llama-2-7b-chat-hf_prune_lora_awq,30.281484743416435,3.08
+Llama-2-7b-chat-hf_prune_lora_awq,32.19700418952602,3.08
+Mistral 7B Instruct v0.2 gptq 4Bit,6.175839244471652,4.38
+Mistral 7B Instruct v0.2 gptq 3Bit,3.6870203811574203,8.05
+Mistral 7B Instruct v0.2 gptq 2Bit,6.613086907107792,7.11
+Mistral 7B Instruct v0.2 gptq 4Bit,6.229392128520812,4.38
+Llama 3 8B Instruct LoRA ms-marco merged,31.430053527813424,14.97
+Mistral-7B-Instruct_prune_lora_awq,28.269872760465297,3.24
+Mistral-7B-Instruct_prune_lora_awq,25.48737706712375,3.24
+Llama-3-8B-Instruct_gptq_4bit,6.124981964802967,5.47
+Llama-3-8B-Instruct_gptq_3bit,3.51342430641941,4.76
+Llama-3-8B-Instruct_gptq_2bit,6.5522065591689165,8.59
+Meta-Llama-3-8B-Instruct_qlora,15.530982463024273,10.19
+Meta-Llama-3-8B-Instruct,25.83366708495246,25.28
+Meta-Llama-3-8B-Instruct_qlora_low,14.242454688692243,5.44
+Meta-Llama-3-8B-Instruct-AWQ,2.387714892027402,10.9
+Meta-Llama-3-8B-Instruct_qlora,15.35171132694061,5.44
+Mistral-7B-Instruct-v0.2_qlora,15.44393537236662,9.79

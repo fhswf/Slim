@@ -1,0 +1,10 @@
+slices:
+  - sources:
+      - model: meta-llama/Llama-2-7b-chat-hf
+        layer_range: [0,18]
+  - sources:
+      - model: meta-llama/Llama-2-7b-chat-hf
+        layer_range: [30,32]
+            
+merge_method: passthrough
+dtype: bfloat16

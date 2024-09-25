@@ -1,2 +1,0 @@
-Detected kernel version 5.4.0, which is below the recommended minimum of 5.5.0; this can cause the process to hang. It is recommended to upgrade the kernel to the minimum version or higher.
-max_steps is given, it will override any value given in num_train_epochs
